@@ -37,7 +37,9 @@ pip install git+https://github.com/microsoft/CLAP.git
 ### 3. Run inference on a dataset
 
 ```bash
-python esc50_eval.py
+python ZS_classification_<dataset>.py
+
+# for example run python ZS_classification_esc_50.py
 ```
 
 
@@ -47,6 +49,10 @@ python esc50_eval.py
 |---------------|---------------------|---------------------|
 | ESC-50        | 87.75%(avg of all folds)              |  93.9%             |
 | US8K          |       79.85%    |  82.3%             |
-| FSD50K          |               |           |
+| FSD50K          |               |  0.485 (mAP)     |
    
+## Contributors
+
+- [Purvanshi Nijhawan](https://github.com/CoffeeCoder3009)
+- [Asmi Srivastava](https://github.com/asmisriva)
 
