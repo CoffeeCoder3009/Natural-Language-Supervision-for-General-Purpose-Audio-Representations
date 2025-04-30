@@ -7,15 +7,13 @@ clap_model = CLAP(version='2023', use_cuda=False) # by default it uses HTSAT-22 
 # version 2022
 
 # Load ESC-50 Dataset
-# ESC50_PATH = "D:/ESC-50-master/ESC-50-master/meta"
-# metadata = pd.read_csv(os.path.join(ESC50_PATH,'meta/esc-50'))
-# ESC50_PATH = r"D:/ESC-50-master/ESC-50-master"
-ESC50_PATH = r"D:/BTP/Datasets/ESC-50-master/ESC-50-master"
+
+ESC50_PATH = r"ESC-50-master/ESC-50-master"  # add path to the dataset
 
 metadata = pd.read_csv(os.path.join(ESC50_PATH, 'meta', 'esc50.csv'))
 
 # Filter Test Set (Folds 5 for testing as per ESC-50 standard)
-test_set = metadata[metadata['fold'] == 4]
+test_set = metadata[metadata['fold'] == 5]
 
 # Prepare File Paths and Class Labels
 file_paths = [os.path.join(ESC50_PATH, 'audio', file) for file in test_set['filename']]
