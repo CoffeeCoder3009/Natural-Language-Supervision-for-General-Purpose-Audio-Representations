@@ -23,9 +23,15 @@ git clone https://github.com/CoffeeCoder3009/Natural-Language-Supervision-for-Ge
 ```
 
 
-### 2. Install requirements
+### 2. Setup
+First, install python 3.8 or higher (3.11 recommended). Then, install CLAP using either of the following:
+
 ```bash
-pip install -r requirements.txt
+# Install pypi pacakge
+pip install msclap
+
+# Or Install latest (unstable) git source
+pip install git+https://github.com/microsoft/CLAP.git
 ```
 
 ### 3. Run inference on a dataset
